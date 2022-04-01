@@ -5,17 +5,17 @@
 <p style="user-select: auto;">&nbsp;</p>
 <p style="user-select: auto;"><strong style="user-select: auto;">Example 1:</strong></p>
 
-<pre style="position: relative; user-select: auto;"><strong style="user-select: auto;">Input:</strong> nums = [-1,0,3,5,9,12], target = 9
+<pre style="user-select: auto;"><strong style="user-select: auto;">Input:</strong> nums = [-1,0,3,5,9,12], target = 9
 <strong style="user-select: auto;">Output:</strong> 4
 <strong style="user-select: auto;">Explanation:</strong> 9 exists in nums and its index is 4
-<div class="open_grepper_editor" title="Edit &amp; Save To Grepper" style="user-select: auto;"></div></pre>
+</pre>
 
 <p style="user-select: auto;"><strong style="user-select: auto;">Example 2:</strong></p>
 
-<pre style="position: relative; user-select: auto;"><strong style="user-select: auto;">Input:</strong> nums = [-1,0,3,5,9,12], target = 2
+<pre style="user-select: auto;"><strong style="user-select: auto;">Input:</strong> nums = [-1,0,3,5,9,12], target = 2
 <strong style="user-select: auto;">Output:</strong> -1
 <strong style="user-select: auto;">Explanation:</strong> 2 does not exist in nums so return -1
-<div class="open_grepper_editor" title="Edit &amp; Save To Grepper" style="user-select: auto;"></div></pre>
+</pre>
 
 <p style="user-select: auto;">&nbsp;</p>
 <p style="user-select: auto;"><strong style="user-select: auto;">Constraints:</strong></p>
