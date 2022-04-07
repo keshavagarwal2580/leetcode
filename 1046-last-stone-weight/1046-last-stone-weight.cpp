@@ -1,9 +1,7 @@
 class Solution {
 public:
-    int lastStoneWeight(vector<int>& stones) {
-        sort(stones.begin(),stones.end());
-        vector<int> v;
-        v=stones;
+    int lastStoneWeight(vector<int>& v) {
+        sort(v.begin(),v.end());
         while(v.size()>1){
              int n=v.size()-1;
             int diff=v[n]-v[n-1];
@@ -18,8 +16,7 @@ public:
             sort(v.begin(),v.end());
         }
         }
-        if(v.size()>0)
-        return v[0];
+        if(v.size()>0) return v[0];
         return 0;
     }
 };
