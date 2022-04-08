@@ -13,7 +13,7 @@ public:
     
     int add(int val) {
          pq.push(val);
-        while(pq.size()>lar){
+        if(pq.size()>lar){
             pq.pop();
         }
         return pq.top();
