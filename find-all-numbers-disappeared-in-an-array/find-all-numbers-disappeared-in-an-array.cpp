@@ -1,11 +1,11 @@
 class Solution {
 public:
     vector<int> findDisappearedNumbers(vector<int>& nums) {
-        int mx=INT_MIN;
+        //int mx=INT_MIN;
         int N=nums.size();
-        for(int i=0;i<nums.size();i++){
-            mx=max(mx,nums[i]);
-        }
+        // for(int i=0;i<nums.size();i++){
+        //     mx=max(mx,nums[i]);
+        //}
         bool check[N+1];
         vector<int> output;
         for(int i=1;i<=N;i++){
