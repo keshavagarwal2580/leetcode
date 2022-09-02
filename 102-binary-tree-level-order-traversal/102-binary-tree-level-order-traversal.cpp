@@ -11,18 +11,24 @@
  */
 class Solution {
 public:
-    void trans(TreeNode* root,int level,map<int,vector<int>> &ar){
-        if(!root) return;
-        ar[level].push_back(root->val);
-        trans(root->left,level+1,ar);
-        trans(root->right,level+1,ar);
-    }
     vector<vector<int>> levelOrder(TreeNode* root) {
-        map<int,vector<int>> ar;
+        queue<TreeNode*>q;
+        if(root)
+        q.push(root);
         vector<vector<int>> ans;
-        trans(root,0,ar);
-        for(auto it: ar){
-            ans.push_back(it.second);
+        while(!q.empty()){
+            int n=q.size();
+            vector<int> temp;
+            for(int i=0;i<n;i++){
+                TreeNode* curr=q.front();
+                temp.push_back(curr->val);
+                q.pop();
+                if(curr->left) q.push(curr->left);
+                if(curr->right) q.push(curr->right);
+                
+            }
+            ans.push_back(temp);
+            
         }
         return ans;
     }
