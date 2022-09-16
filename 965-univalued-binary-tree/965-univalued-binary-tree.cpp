@@ -17,10 +17,8 @@ public:
         if(root==NULL) return true;
         if(p!=root->val) return false;
         
-        bool l=res(root->left,p);
-        bool r=res(root->right,p);
         
-        return l&&r;
+        return res(root->left,p)&&res(root->right,p);
     }
     
     
