@@ -12,7 +12,7 @@
 class Solution {
 public:
     
-    TreeNode* construct(TreeNode *root,vector<int> &nums,int l,int r,map<int,int> &m){
+    TreeNode* construct(TreeNode *root,vector<int> &nums,int l,int r,unordered_map<int,int> &m){
         if(l>r)  return NULL;
         int x=*max_element(nums.begin()+l,nums.begin()+r+1);
         root->val=x;
@@ -26,7 +26,7 @@ public:
     TreeNode* constructMaximumBinaryTree(vector<int>& nums) {
         
         
-        map<int,int>m;
+        unordered_map<int,int>m;
         int n=nums.size();
         for(int i=0;i<n;i++){
             m[nums[i]]=i;
