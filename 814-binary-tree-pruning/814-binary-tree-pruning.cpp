@@ -12,11 +12,11 @@
 class Solution {
 public:
     
-    TreeNode * construct(TreeNode *root,TreeNode *node){
+    TreeNode * construct(TreeNode *root){
         if(root==NULL) return root;
         
-        root->left=construct(root->left,node);
-        root->right=construct(root->right,node);
+        root->left=construct(root->left);
+        root->right=construct(root->right);
         
         if(root->val==0 && root->left==NULL && root->right==NULL) return NULL;
         
@@ -25,8 +25,6 @@ public:
     }
     
     TreeNode* pruneTree(TreeNode* root) {
-        
-        TreeNode * node;
-     return   construct(root,node);
+     return   construct(root);
     }
 };
