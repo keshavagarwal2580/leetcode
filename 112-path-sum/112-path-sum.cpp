@@ -12,7 +12,7 @@
 class Solution {
 public:
     bool flag=false;
-    void f(TreeNode * root,int targetSum,int sum){
+    void f(TreeNode * root,int targetSum,int &sum){
     
         if(root==NULL) return ;
         
@@ -26,7 +26,7 @@ public:
         
         f(root->left,targetSum,sum);
         f(root->right,targetSum,sum);
-        
+        sum-=root->val;
     }
     
     
