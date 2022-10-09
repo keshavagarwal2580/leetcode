@@ -4,11 +4,17 @@ public:
         
         bool row=false,col=false;
         for(int i=0;i<matrix.size();i++){
-            if(matrix[i][0]==0) row=true;
+            if(matrix[i][0]==0) {
+                row=true;
+                break;
+            }
         }
         
         for(int j=0;j<matrix[0].size();j++){
-            if(matrix[0][j]==0) col=true;
+            if(matrix[0][j]==0) {
+                col=true;
+                break;
+            }
         }
         
         
